@@ -100,7 +100,7 @@ var App = (function (_React$Component) {
 					subject_name: 'Dennis',
 					birthday: new Date("1997-06-16"),
 					get_events: this.generate_events.bind(this) 
-				})
+				}))
 	}]);
 
 	return App;
