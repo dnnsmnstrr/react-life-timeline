@@ -30,7 +30,7 @@ var App = (function (_React$Component) {
 		};
 		this.EVENTS = [
 			{date_start: new Date('1997-06-16'), title: 'Is born in Durham, North Carolina', color: '#FC004C'},
-			{date_start: new Date('2000-09-01'), date_end: new Date('2015-05-30'), title: 'Lives in Garching (close to Munich), Germany.', color: '#95F268'},
+			{date_start: new Date('2000-09-01'), date_end: new Date('2004-05-01'), title: 'Lives in Garching (close to Munich), Germany.', color: '#95F268'},
 			{date_start: new Date('2004-07-01'), date_end: new Date('2005-08-01'), title: 'Spends a year in Birmingham, Alabama.', color: '#95F268'},
 			{date_start: new Date('2005-09-01'), date_end: new Date('2007-07-30'), title: 'One more year in Garching.', color: '#95F268'},
 			{date_start: new Date('2007-08-01'), date_end: new Date('2012-07-30'), title: 'Lives in Markleeberg (close to Leipzig), Germany.', color: '#95F268'},
@@ -94,64 +94,13 @@ var App = (function (_React$Component) {
 				React.createElement(
 					'h1',
 					null,
-					'Barack Obama - Life by Weeks'
+					'Dennis Muensterer - Life by Weeks'
 				),
 				React.createElement(ReactLifeTimeline, {
-					subject_name: 'Barack',
-					birthday: new Date("1961-08-04"),
+					subject_name: 'Dennis',
+					birthday: new Date("1997-06-16"),
 					get_events: this.generate_events.bind(this) }),
-				React.createElement(
-					'h2',
-					null,
-					'Adding Incrementally via props'
-				),
-				React.createElement(ReactLifeTimeline, {
-					subject_name: 'Barack',
-					birthday: new Date("1961-08-04"),
-					events: this.incremental_events() }),
-				React.createElement(
-					'p',
-					null,
-					React.createElement(
-						'a',
-						{ href: 'javascript:void(0)', onClick: this.restart_incremental.bind(this) },
-						'Play Incremental / Restart'
-					)
-				),
-				React.createElement(
-					'p',
-					null,
-					React.createElement(
-						'small',
-						null,
-						'Source data: ',
-						React.createElement(
-							'a',
-							{ href: 'http://edition.cnn.com/2012/12/26/us/barack-obama---fast-facts/', target: '_blank' },
-							'CNN'
-						)
-					)
-				),
-				React.createElement(
-					'h2',
-					null,
-					'With Ongoing Event'
-				),
-				React.createElement(ReactLifeTimeline, {
-					subject_name: 'John',
-					birthday: new Date("2017-01-01"),
-					events: this.EVENTS_WITH_ONGOING }),
-				React.createElement(
-					'h2',
-					null,
-					'With Future Event'
-				),
-				React.createElement(ReactLifeTimeline, {
-					subject_name: 'John',
-					birthday: new Date("2017-01-01"),
-					events: this.EVENTS_WITH_FUTURE })
-			);
-		}
+				}
 	}]);
 
 	return App;
